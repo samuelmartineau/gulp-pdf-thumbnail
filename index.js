@@ -12,7 +12,7 @@ module.exports = function (options) {
 
 		// Check if imageMagick is installed
 		exec('convert -version', function(error, stdout, stderr) {
-			if(error || !stdout || stdout.toLowerCase().indexOf('imagemagick') == 0){
+			if(error || !stdout || stdout.toLowerCase().indexOf('imagemagick') == -1){
 				cb(new gutil.PluginError('gulp-pdf-thumbnail-generator', 'ImageMagick not installed'));
 				return;
 			}
