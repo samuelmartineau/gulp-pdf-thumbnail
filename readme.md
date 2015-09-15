@@ -1,6 +1,15 @@
-# gulp-pdf-thumbnail [![Build Status](https://travis-ci.org/samuelmartineau/gulp-pdf-thumbnail.svg?branch=master)](https://travis-ci.org/samuelmartineau/gulp-pdf-thumbnail)
+# gulp-pdf-thumbnail 
 
 > Gulp plugin that generate PNG thumbnail from PDF files.
+
+## Getting started
+
+First download and install GraphicsMagick or ImageMagick. In Mac OS X, you can simply use Homebrew and do:
+
+```
+brew install imagemagick
+brew install graphicsmagick
+```
 
 ## Install
 
