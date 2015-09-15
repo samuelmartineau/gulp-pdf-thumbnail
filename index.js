@@ -8,15 +8,15 @@ var exec = require('child_process').exec;
 
 module.exports = function (options) {
 
-	return through.obj(function (file, enc, cb) {
+	// Check if imageMagick is installed
+	exec('convert -version', function(error, stdout, stderr) {
+		if(error || !stdout || stdout.toLowerCase().indexOf('imagemagick') == -1){
+			new gutil.PluginError('gulp-pdf-thumbnail-generator', 'ImageMagick not installed');
+			return;
+		}
+	});
 
-		// Check if imageMagick is installed
-		exec('convert -version', function(error, stdout, stderr) {
-			if(error || !stdout || stdout.toLowerCase().indexOf('imagemagick') == -1){
-				cb(new gutil.PluginError('gulp-pdf-thumbnail-generator', 'ImageMagick not installed'));
-				return;
-			}
-		});
+	return through.obj(function (file, enc, cb) {
 
 		if (file.isNull()) {
 			cb(null, file);
