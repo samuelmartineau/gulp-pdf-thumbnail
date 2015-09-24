@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/samuelmartineau/gulp-pdf-thumbnail.svg?branch=master)](https://travis-ci.org/samuelmartineau/gulp-pdf-thumbnail)
 [![Coverage Status](https://coveralls.io/repos/samuelmartineau/gulp-pdf-thumbnail/badge.svg?branch=master&service=github)](https://coveralls.io/github/samuelmartineau/gulp-pdf-thumbnail?branch=master)
 [![Dependency Status](https://david-dm.org/samuelmartineau/gulp-pdf-thumbnail.svg)](https://david-dm.org/samuelmartineau/gulp-pdf-thumbnail)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 [![NPM](https://nodei.co/npm/gulp-pdf-thumbnail.png?downloads=true&stars=true)](https://nodei.co/npm/gulp-pdf-thumbnail/)
 
