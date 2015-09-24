@@ -2,6 +2,8 @@
 
 [![NPM version](https://img.shields.io/npm/v/gulp-pdf-thumbnail.svg?style=flat)](https://www.npmjs.com/package/gulp-pdf-thumbnail)
 [![Build Status](https://img.shields.io/travis/samuelmartineau/gulp-pdf-thumbnail.svg?style=flat)](https://travis-ci.org/samuelmartineau/gulp-pdf-thumbnail)
+[![Coverage Status](https://coveralls.io/repos/samuelmartineau/gulp-pdf-thumbnail/badge.svg?branch=master&service=github)](https://coveralls.io/github/samuelmartineau/gulp-pdf-thumbnail?branch=master)
+
 [![NPM](https://nodei.co/npm/gulp-pdf-thumbnail.png?downloads=true&stars=true)](https://nodei.co/npm/gulp-pdf-thumbnail/)
 
 ## What this?
