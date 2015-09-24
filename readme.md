@@ -1,4 +1,8 @@
-# gulp-pdf-thumbnail 
+# gulp-pdf-thumbnail
+
+[![NPM](https://nodei.co/npm/gulp-pdf-thumbnail.png?downloads=true&stars=true)](https://nodei.co/npm/gulp-pdf-thumbnail/)
+
+## What this?
 
 > Gulp plugin that generate PNG thumbnail from PDF files.
 
