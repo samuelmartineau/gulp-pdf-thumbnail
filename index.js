@@ -1,24 +1,26 @@
 'use strict';
 var gutil = require('gulp-util');
 var through = require('through2');
-var gm = require('gm').subClass({imageMagick: true});
+var gm = require('gm').subClass({
+	imageMagick: true
+});
 var path = require('path');
 var replaceExt = require('replace-ext');
 var exec = require('child_process').exec;
 
-module.exports = function (options) {
+module.exports = function(options) {
 
 	// Check if imageMagick is installed
 	exec('convert -version', function(error, stdout, stderr) {
-		if(error || !stdout || stdout.toLowerCase().indexOf('imagemagick') == -1){
+		if (error || !stdout || stdout.toLowerCase().indexOf('imagemagick') == -1) {
 			new gutil.PluginError('gulp-pdf-thumbnail-generator', 'ImageMagick not installed');
-			return;
 		}
 	});
 
-	return through.obj(function (file, enc, cb) {
+	return through.obj(function(file, enc, cb) {
 
 		if (file.isNull()) {
+			gutil.log('Be carefull, you passed a file without contents')
 			cb(null, file);
 			return;
 		}
@@ -33,25 +35,19 @@ module.exports = function (options) {
 			return;
 		}
 
-		try {
+		var that = this;
+		// select the first page
+		gm(file.path + '[0]')
+			.out('+adjoin')
+			.trim()
+			.toBuffer('PNG', function(err, buffer) {
+				if (err) return handle(err);
 
-			var that = this;
-			// select the first page
-			gm(file.path + '[0]')
-				.out('+adjoin')
-				.trim()
-				.toBuffer('PNG', function (err, buffer) {
-					if (err) return handle(err);
-
-					file.contents = buffer;
-					file.path = replaceExt(file.path, '.png');
-					that.push(file);
-					cb();
-				});
-
-		} catch (err) {
-			this.emit('error', new gutil.PluginError('gulp-pdf-thumbnail-generator', err));
-		}
+				file.contents = buffer;
+				file.path = replaceExt(file.path, '.png');
+				that.push(file);
+				cb();
+			});
 
 	});
 };
