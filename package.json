@@ -13,7 +13,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "tape tests/**/*.js"
+    "test": "./node_modules/tape/bin/tape tests/**/*.js",
+    "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/tape/bin/tape -R spec ./tests/**/*.js"
   },
   "files": [
     "index.js"
@@ -32,6 +33,8 @@
     "replace-ext": "0.0.1"
   },
   "devDependencies": {
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.21",
     "tape": "^4.2.0",
     "vinyl": "^0.5.3",
     "vinyl-file": "^1.2.1"
