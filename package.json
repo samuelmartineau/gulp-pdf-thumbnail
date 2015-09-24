@@ -26,11 +26,11 @@
     "gm"
   ],
   "dependencies": {
-    "gulp-util": "^3.0.4",
-    "through2": "^0.6.5",
     "gm": "^1.18.1",
-    "path": "^0.11.14",
-    "replace-ext": "0.0.1"
+    "gulp-util": "^3.0.4",
+    "path": "^0.12.7",
+    "replace-ext": "0.0.1",
+    "through2": "^2.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.4",
