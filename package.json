@@ -1,6 +1,6 @@
 {
   "name": "gulp-pdf-thumbnail",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Gulp plugin that generate PNG thumbnail from PDF files.",
   "license": "MIT",
   "repository": "samuelmartineau/gulp-pdf-thumbnail",
