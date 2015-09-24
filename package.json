@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "tape tests/**/*.js"
   },
   "files": [
     "index.js"
@@ -32,6 +32,8 @@
     "replace-ext": "0.0.1"
   },
   "devDependencies": {
-    "mocha": "*"
+    "tape": "^4.2.0",
+    "vinyl": "^0.5.3",
+    "vinyl-file": "^1.2.1"
   }
 }
