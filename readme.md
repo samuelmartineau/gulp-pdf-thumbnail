@@ -14,12 +14,10 @@
 
 ## Getting started
 
-First download and install GraphicsMagick or ImageMagick. In Mac OS X, you can simply use Homebrew and do:
+First download and install GraphicsMagick or ImageMagick.
 
-```
-brew install imagemagick
-brew install graphicsmagick
-```
+[imagemagick!] (http://www.imagemagick.org/script/binary-releases.php)
+[graphicsmagick!] (http://www.graphicsmagick.org/)
 
 ## Install
 
