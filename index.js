@@ -41,13 +41,15 @@ module.exports = function(options) {
 			.out('+adjoin')
 			.trim()
 			.toBuffer('PNG', function(err, buffer) {
-				if (err) return handle(err);
+				if (err) {
+					cb(new gutil.PluginError('gulp-pdf-thumbnail-generator', err));
+					return;
+				}
 
 				file.contents = buffer;
 				file.path = replaceExt(file.path, '.png');
 				that.push(file);
 				cb();
 			});
-
 	});
 };
