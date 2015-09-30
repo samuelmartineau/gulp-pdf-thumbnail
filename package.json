@@ -13,8 +13,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "./node_modules/tape/bin/tape tests/**/*.js",
-    "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/tape/bin/tape -R spec ./tests/**/*.js"
+    "test": "tape tests/**/*.js",
+    "coveralls": "istanbul cover tape -R spec ./tests/**/*.js"
   },
   "files": [
     "index.js"
