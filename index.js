@@ -41,7 +41,7 @@ module.exports = function(options) {
 			.out('+adjoin')
 			.trim()
 			.toBuffer('PNG', function(err, buffer) {
-				if (err) return handle(err);
+				if (err) return console.log(err);
 
 				file.contents = buffer;
 				file.path = replaceExt(file.path, '.png');
