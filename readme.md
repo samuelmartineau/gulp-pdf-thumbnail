@@ -16,10 +16,21 @@
 
 First download and install GraphicsMagick or ImageMagick. In Mac OS X, you can simply use Homebrew and do:
 
+### Mac
 ```
 brew install imagemagick
 brew install graphicsmagick
 ```
+### Windows
+You can use chocolatey
+```
+choco install imagemagick
+choco install graphicsmagick
+```
+
+Or you can find the install files here :
+Imagemagick : http://www.imagemagick.org/script/binary-releases.php
+GraphicsMagick : http://sourceforge.net/projects/graphicsmagick/files/
 
 ## Install
 
