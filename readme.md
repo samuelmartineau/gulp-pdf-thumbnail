@@ -16,7 +16,7 @@
 
 First download and install GraphicsMagick or ImageMagick.
 
-[imagemagick!] (http://www.imagemagick.org/script/binary-releases.php)
+[imagemagick!] (http://www.imagemagick.org)
 [graphicsmagick!] (http://www.graphicsmagick.org/)
 
 ## Install
