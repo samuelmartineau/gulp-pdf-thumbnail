@@ -6,7 +6,6 @@
   "repository": "samuelmartineau/gulp-pdf-thumbnail",
   "author": {
     "name": "Samuel Martineau",
-    "email": "samuel.martineau@axa.fr",
     "url": "samuelmartineau.github.io"
   },
   "engines": {
@@ -14,7 +13,8 @@
   },
   "scripts": {
     "test": "tape tests/**/*.js",
-    "coveralls": "istanbul cover tape -R spec ./tests/**/*.js"
+    "coveralls": "istanbul cover tape -R spec ./tests/**/*.js",
+    "check": "npm-check"
   },
   "files": [
     "index.js"
@@ -36,6 +36,7 @@
     "coveralls": "^2.11.4",
     "istanbul": "^0.3.21",
     "nock-exec": "^0.1.0",
+    "npm-check": "^4.1.2",
     "tape": "^4.2.0",
     "vinyl": "^0.5.3",
     "vinyl-file": "^1.2.1"
