@@ -9,12 +9,12 @@
     "url": "samuelmartineau.github.io"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.4.0"
   },
   "scripts": {
-    "test": "tape tests/**/*.js",
-    "coveralls": "istanbul cover tape -R spec ./tests/**/*.js",
-    "check": "npm-check"
+    "test": "xo && npm run tape",
+    "tape": "tape tests/**/*.js",
+    "coveralls": "istanbul cover tape -R spec ./tests/**/*.js"
   },
   "files": [
     "index.js"
@@ -26,19 +26,21 @@
     "gm"
   ],
   "dependencies": {
-    "gm": "^1.21.1",
-    "gulp-util": "^3.0.4",
-    "path": "^0.12.7",
-    "replace-ext": "0.0.1",
-    "through2": "^2.0.0"
+    "gm": "1.23.0",
+    "gulp-util": "3.0.7",
+    "replace-ext": "1.0.0",
+    "through2": "2.0.1"
   },
   "devDependencies": {
-    "coveralls": "^2.11.4",
-    "istanbul": "^0.3.21",
-    "nock-exec": "^0.1.0",
-    "npm-check": "^4.1.2",
-    "tape": "^4.2.0",
-    "vinyl": "^0.5.3",
-    "vinyl-file": "^1.2.1"
+    "coveralls": "2.11.14",
+    "istanbul": "0.4.5",
+    "nock-exec": "0.1.0",
+    "tape": "4.6.0",
+    "vinyl": "1.2.0",
+    "vinyl-file": "2.0.0",
+    "xo": "0.16.0"
+  },
+  "xo": {
+    "esnext": true
   }
 }

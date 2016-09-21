@@ -18,6 +18,7 @@ First download and install GraphicsMagick or ImageMagick.
 
 [imagemagick!] (http://www.imagemagick.org)
 [graphicsmagick!] (http://www.graphicsmagick.org/)
+[ghostscript!] (http://www.ghostscript.com/)
 
 ## Install
 
