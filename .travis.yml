@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "0.12"
+  - "4"
 script: "npm run coveralls"
 # Send coverage data to Coveralls
 after_script: "cat ./coverage/lcov.info | coveralls.js"
